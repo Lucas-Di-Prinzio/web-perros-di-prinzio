@@ -1,0 +1,422 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+nav ul li {
+    display: inline;
+
+
+}
+
+.nolink {
+    text-decoration: none;
+    color: white;
+}
+
+
+.titulo {
+    font-family: "Roboto Slab", Serif;
+}
+
+.texto {
+    font-family: "Roboto", sans-serif;
+}
+
+.fondod {
+    background: rgb(98, 102, 102);
+    background: linear-gradient(270deg, rgba(98, 102, 102, 1) 0%, rgba(135, 122, 106, 1) 14%, rgba(212, 163, 115, 1) 100%);
+}
+
+.texto-footer {
+    background-color: rgb(250, 237, 205);
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.whitetext {
+    color: white;
+}
+
+.imagesize {
+    height: 33rem;
+    width: 39rem;
+}
+
+.bimage {
+    background-image: url("../Imagenes/bimage.jpg");
+    background-position: 10px 20px;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    width: 700px;
+    height: 467px;
+
+
+}
+
+.cen {
+    text-align: center;
+    position: relative;
+    padding-top: 50px;
+    color: white;
+}
+
+.fondo {
+    background-color: rgb(254, 250, 224);
+}
+
+.mp {
+    margin-left: 20px;
+
+}
+
+.mm {
+    margin-left: 35px;
+    margin-right: 350px;
+}
+
+.tdp {
+    height: 450px;
+    width: 550px;
+
+
+}
+
+
+/* GRID INDEX */
+
+#header {
+    grid-area: header;
+    width: 100%;
+}
+
+#nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+}
+
+#section1 {
+    grid-area: section1;
+}
+
+#section2 {
+    grid-area: section2;
+}
+
+#section3 {
+    grid-area: section3;
+
+}
+
+#footer {
+    grid-area: footer;
+    width: 100%;
+}
+
+#bodyindex {
+    display: grid;
+    grid-template-rows: 20px 20px 2fr 2fr 20px;
+    grid-template-columns: 34% 33% 33%;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "section1 section1 section1"
+        "section2 section2 section3"
+        "footer footer footer";
+}
+
+.cajasnav {
+    margin: 4em
+}
+
+.iframe {
+    float: left;
+}
+
+
+
+@media screen and (max-width:320px) {
+    #bodyindex {
+        grid-template-rows: 20px 20px auto auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "section1"
+            "section2"
+            "section3"
+            "footer";
+
+    }
+
+
+    header {
+        width: 100%;
+
+    }
+
+    .cajasnav {
+        margin: 0;
+    }
+
+    #nav {
+        display: flex;
+        width: 100%;
+    }
+
+    .texto {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    .bimage {
+        background-image: url("../Imagenes/bimage.jpg");
+        background-position: 0;
+        background-repeat: no-repeat;
+        font-size: 20px;
+        width: 100%;
+        height: 467px;
+        word-break: keep-all;
+    }
+
+    #footer {
+        width: 100%;
+    }
+
+    #section3 {
+        justify-content: center;
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width:600px)
+
+/* and (min-width:320) */
+    {
+    #bodyindex {
+        grid-template-rows: 20px 20px auto auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "section1"
+            "section2"
+            "section3"
+            "footer";
+    }
+
+    header {
+        width: 100%;
+
+    }
+
+    .cajasnav {
+        margin: 0;
+    }
+
+    #nav {
+        display: flex;
+        width: 100%;
+    }
+
+    .texto {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    .bimage {
+        background-image: url("../Imagenes/bimage.jpg");
+        background-position: 0;
+        background-repeat: no-repeat;
+        font-size: 20px;
+        width: 100%;
+        height: 467px;
+        word-break: keep-all;
+    }
+
+    #footer {
+        width: 100%;
+    }
+
+    #section3 {
+        justify-content: center;
+        display: flex;
+    }
+}
+
+/* GRID TIPS */
+#headertips {
+    grid-area: headertips;
+}
+
+#navtips {
+    grid-area: navtips;
+    display: flex;
+    justify-content: space-around;
+}
+
+#maintips {
+    grid-area: maintips;
+}
+
+#footertips {
+    grid-area: footertips;
+}
+
+#bodytips {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 20px 20px 2fr auto;
+    grid-template-areas:
+        "headertips headertips"
+        "navtips navtips"
+        "maintips maintips"
+        "footertips footertips"
+    ;
+}
+
+@media screen and (max-width: 320px) {
+    #bodytips {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 20px 20px 2fr auto;
+        grid-template-areas:
+            "headertips headertips"
+            "navtips navtips"
+            "maintips maintips"
+            "footertips footertips"
+    }
+
+    .cajasnav {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #bodytips {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 20px 20px 2fr auto;
+        grid-template-areas:
+            "headertips headertips"
+            "navtips navtips"
+            "maintips maintips"
+            "footertips footertips"
+    }
+
+    .cajasnav {
+        margin: 0;
+    }
+}
+
+#headertdp {
+    grid-area: headertdp;
+}
+
+#navtdp {
+    grid-area: navtdp;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#imagen1 {
+    grid-area: imagen1;
+    
+}
+
+#imagen2 {
+    grid-area: imagen2;
+}
+
+#imagen3 {
+    grid-area: imagen3;
+}
+
+#imagen4 {
+    grid-area: imagen4;
+}
+
+#imagen5 {
+    grid-area: imagen5;
+}
+
+#imagen6 {
+    grid-area: imagen6;
+}
+
+#imagen7 {
+    grid-area: imagen7;
+}
+
+#imagen8 {
+    grid-area: imagen8;
+}
+
+#imagen9 {
+    grid-area: imagen9;
+}
+
+#texto1 {
+    grid-area: texto1;
+
+}
+
+#texto2 {
+    grid-area: texto2;
+}
+
+#texto3 {
+    grid-area: texto3;
+}
+
+#texto4 {
+    grid-area: texto4;
+}
+
+#texto5 {
+    grid-area: texto5;
+}
+
+#texto6 {
+    grid-area: texto6;
+}
+
+#texto7 {
+    grid-area: texto7;
+}
+
+#texto8 {
+    grid-area: texto8;
+}
+
+#texto9 {
+    grid-area: texto9;
+}
+
+#footertdp {
+    grid-area: footertdp;
+}
+
+#medio1 {
+    grid-area: medio1;
+
+}
+
+#medio2 {
+    grid-area: medio2;
+
+}
+
+#medio3 {
+    grid-area: medio3;
+
+}
+
+
+
