@@ -18,15 +18,17 @@ nav ul li {
 
 .titulo {
     font-family: "Roboto Slab", Serif;
+    font-weight: 900;
 }
 
 .texto {
     font-family: "Roboto", sans-serif;
+    font-weight:600
 }
 
 .fondod {
-    background: rgb(98, 102, 102);
-    background: linear-gradient(270deg, rgba(98, 102, 102, 1) 0%, rgba(135, 122, 106, 1) 14%, rgba(212, 163, 115, 1) 100%);
+    background: rgb(212,163,115);
+background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(212,163,115,1) 22%, rgba(250,237,205,1) 100%);
 }
 
 .texto-footer {
@@ -38,9 +40,8 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
 
 }
 
-.whitetext {
-    color: white;
-}
+
+
 
 .imagesize {
     height: 33rem;
@@ -54,9 +55,22 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
     font-size: 30px;
     width: 700px;
     height: 467px;
-
-
 }
+
+.gridc{
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+ .bgc{
+     background-color: rgb(204, 213, 174, 0.5)
+ }   
+
+
+
+
 
 .cen {
     text-align: center;
@@ -82,8 +96,15 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
 .tdp {
     height: 450px;
     width: 550px;
+}
+#navtdp{
+    display: flex;
+    justify-content: space-around;
+}
 
-
+.cajasnav{
+    color: black;
+    margin: 4em;
 }
 
 
@@ -118,15 +139,18 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
     width: 100%;
 }
 
+#card{
+    grid-area: card;
+}
 #bodyindex {
     display: grid;
-    grid-template-rows: 20px 20px 2fr 2fr 20px;
+    grid-template-rows: 20px 20px 2fr 500px 20px;
     grid-template-columns: 34% 33% 33%;
     grid-template-areas:
         "header header header"
         "nav nav nav"
         "section1 section1 section1"
-        "section2 section2 section3"
+        "section2 section2 card"
         "footer footer footer";
 }
 
@@ -134,10 +158,19 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
     margin: 4em
 }
 
-.iframe {
-    float: left;
+@media screen and (max-width:1022px){
+    #bodyindex {
+        grid-template-rows: 20px 20px auto auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "section1"
+            "section2"
+            "card"
+            "footer";
 }
-
+}
 
 
 @media screen and (max-width:320px) {
@@ -149,7 +182,7 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
             "nav"
             "section1"
             "section2"
-            "section3"
+            "card"
             "footer";
 
     }
@@ -188,10 +221,7 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
         width: 100%;
     }
 
-    #section3 {
-        justify-content: center;
-        display: flex;
-    }
+   
 }
 
 
@@ -207,7 +237,7 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
             "nav"
             "section1"
             "section2"
-            "section3"
+            "card"
             "footer";
     }
 
@@ -312,112 +342,6 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
 
     .cajasnav {
         margin: 0;
+        
     }
 }
-
-#headertdp {
-    grid-area: headertdp;
-}
-
-#navtdp {
-    grid-area: navtdp;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-#imagen1 {
-    grid-area: imagen1;
-    
-}
-
-#imagen2 {
-    grid-area: imagen2;
-}
-
-#imagen3 {
-    grid-area: imagen3;
-}
-
-#imagen4 {
-    grid-area: imagen4;
-}
-
-#imagen5 {
-    grid-area: imagen5;
-}
-
-#imagen6 {
-    grid-area: imagen6;
-}
-
-#imagen7 {
-    grid-area: imagen7;
-}
-
-#imagen8 {
-    grid-area: imagen8;
-}
-
-#imagen9 {
-    grid-area: imagen9;
-}
-
-#texto1 {
-    grid-area: texto1;
-
-}
-
-#texto2 {
-    grid-area: texto2;
-}
-
-#texto3 {
-    grid-area: texto3;
-}
-
-#texto4 {
-    grid-area: texto4;
-}
-
-#texto5 {
-    grid-area: texto5;
-}
-
-#texto6 {
-    grid-area: texto6;
-}
-
-#texto7 {
-    grid-area: texto7;
-}
-
-#texto8 {
-    grid-area: texto8;
-}
-
-#texto9 {
-    grid-area: texto9;
-}
-
-#footertdp {
-    grid-area: footertdp;
-}
-
-#medio1 {
-    grid-area: medio1;
-
-}
-
-#medio2 {
-    grid-area: medio2;
-
-}
-
-#medio3 {
-    grid-area: medio3;
-
-}
-
-
-
