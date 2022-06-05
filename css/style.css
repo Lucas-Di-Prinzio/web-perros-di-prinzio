@@ -119,6 +119,7 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
     grid-area: nav;
     display: flex;
     justify-content: space-around;
+    height: 30px;
 }
 
 #section1 {
@@ -144,7 +145,7 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
 }
 #bodyindex {
     display: grid;
-    grid-template-rows: 20px 20px 2fr 500px 20px;
+    grid-template-rows: 20px 30px 2fr 500px 20px;
     grid-template-columns: 34% 33% 33%;
     grid-template-areas:
         "header header header"
@@ -160,7 +161,7 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
 
 @media screen and (max-width:1022px){
     #bodyindex {
-        grid-template-rows: 20px 20px auto auto auto auto;
+        grid-template-rows: 20px 30px auto auto auto auto;
         grid-template-columns: auto;
         grid-template-areas:
             "header"
@@ -175,7 +176,7 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
 
 @media screen and (max-width:320px) {
     #bodyindex {
-        grid-template-rows: 20px 20px auto auto auto auto;
+        grid-template-rows: 20px 30px auto auto auto auto;
         grid-template-columns: auto;
         grid-template-areas:
             "header"
@@ -230,7 +231,7 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
 /* and (min-width:320) */
     {
     #bodyindex {
-        grid-template-rows: 20px 20px auto auto auto auto;
+        grid-template-rows: 20px 30px auto auto auto auto;
         grid-template-columns: auto;
         grid-template-areas:
             "header"
@@ -289,6 +290,7 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
     grid-area: navtips;
     display: flex;
     justify-content: space-around;
+    height: 30px;
 }
 
 #maintips {
@@ -315,7 +317,7 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
     #bodytips {
         display: grid;
         grid-template-columns: auto auto;
-        grid-template-rows: 20px 20px 2fr auto;
+        grid-template-rows: 20px 30px 2fr auto;
         grid-template-areas:
             "headertips headertips"
             "navtips navtips"
@@ -332,7 +334,7 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
     #bodytips {
         display: grid;
         grid-template-columns: auto auto;
-        grid-template-rows: 20px 20px 2fr auto;
+        grid-template-rows: 20px 30px 2fr auto;
         grid-template-areas:
             "headertips headertips"
             "navtips navtips"
@@ -345,3 +347,18 @@ background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 
         
     }
 }
+
+.hvr-glow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+  }
+  .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  }
