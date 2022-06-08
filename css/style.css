@@ -122,6 +122,11 @@ nav ul li {
   width: 100%;
 }
 
+.imagesize {
+  height: 33rem;
+  width: 39rem;
+}
+
 #card {
   grid-area: card;
 }
@@ -227,6 +232,15 @@ nav ul li {
 }
 
 /* GRID TIPS */
+.mp {
+  margin-left: 20px;
+}
+
+.mm {
+  margin-left: 35px;
+  margin-right: 350px;
+}
+
 #headertips {
   grid-area: headertips;
 }
