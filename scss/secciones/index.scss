@@ -1,0 +1,194 @@
+/* GRID INDEX */
+.imagesize {
+    height: 33rem;
+    width: 39rem;
+}
+.bimage {
+    background-image: url("../imagenes/bimage.jpg");
+    background-position: 10px 20px;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    width: 700px;
+    height: 467px;
+}
+.cen {
+    text-align: center;
+    position: relative;
+    padding-top: 50px;
+    color: white;}
+
+
+#header {
+    grid-area: header;
+    width: 100%;
+}
+
+#nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+}
+
+#section1 {
+    grid-area: section1;
+}
+
+#section2 {
+    grid-area: section2;
+}
+
+#section3 {
+    grid-area: section3;
+
+}
+
+#footer {
+    grid-area: footer;
+    width: 100%;
+}
+.imagesize {
+    height: 33rem;
+    width: 39rem;
+}
+#card{
+    grid-area: card;
+}
+#bodyindex {
+    display: grid;
+    grid-template-rows: 20px 30px 2fr 500px 20px;
+    grid-template-columns: 34% 33% 33%;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "section1 section1 section1"
+        "section2 section2 card"
+        "footer footer footer";
+}
+
+.cajasnav {
+    margin: 4em
+}
+
+@media screen and (max-width:1022px){
+    #bodyindex {
+        grid-template-rows: 20px 30px auto auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "section1"
+            "section2"
+            "card"
+            "footer";
+}
+}
+
+
+@media screen and (max-width:320px) {
+    #bodyindex {
+        grid-template-rows: 20px 30px auto auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "section1"
+            "section2"
+            "card"
+            "footer";
+
+    }
+
+
+    header {
+        width: 100%;
+
+    }
+
+    .cajasnav {
+        margin: 0;
+    }
+
+    #nav {
+        display: flex;
+        width: 100%;
+    }
+
+    .texto {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    .bimage {
+        background-image: url("../imagenes/bimage.jpg");
+        background-position: 0;
+        background-repeat: no-repeat;
+        font-size: 20px;
+        width: 100%;
+        height: 467px;
+        word-break: keep-all;
+    }
+
+    #footer {
+        width: 100%;
+    }
+
+   
+}
+
+
+@media screen and (max-width:600px)
+
+/* and (min-width:320) */
+    {
+    #bodyindex {
+        grid-template-rows: 20px 30px auto auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "section1"
+            "section2"
+            "card"
+            "footer";
+    }
+
+    header {
+        width: 100%;
+
+    }
+
+    .cajasnav {
+        margin: 0;
+    }
+
+    #nav {
+        display: flex;
+        width: 100%;
+    }
+
+    .texto {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    .bimage {
+        background-image: url("../imagenes/bimage.jpg");
+        background-position: 0;
+        background-repeat: no-repeat;
+        font-size: 20px;
+        width: 100%;
+        height: 467px;
+        word-break: keep-all;
+    }
+
+    #footer {
+        width: 100%;
+    }
+
+    #section3 {
+        justify-content: center;
+        display: flex;
+    }
+}
+

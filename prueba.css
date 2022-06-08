@@ -1,0 +1,364 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+nav ul li {
+    display: inline;
+
+
+}
+
+.nolink {
+    text-decoration: none;
+    color: white;
+}
+
+
+.titulo {
+    font-family: "Roboto Slab", Serif;
+    font-weight: 900;
+}
+
+.texto {
+    font-family: "Roboto", sans-serif;
+    font-weight:600;
+}
+
+.fondod {
+    background: rgb(212,163,115);
+background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(212,163,115,1) 22%, rgba(250,237,205,1) 100%);
+}
+
+.texto-footer {
+    background: rgb(212,163,115);
+background: linear-gradient(180deg, rgba(212,163,115,1) 0%, rgba(218,175,130,1) 25%, rgba(204,213,174,1) 92%);
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+
+
+.imagesize {
+    height: 33rem;
+    width: 39rem;
+}
+
+.bimage {
+    background-image: url("../imagenes/bimage.jpg");
+    background-position: 10px 20px;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    width: 700px;
+    height: 467px;
+}
+
+.gridc{
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+ .bgc{
+     background-color: rgb(204, 213, 174, 0.5)
+ }   
+
+
+
+
+
+.cen {
+    text-align: center;
+    position: relative;
+    padding-top: 50px;
+    color: white;
+}
+
+.fondo {
+    background-color: rgb(254, 250, 224);
+}
+
+.mp {
+    margin-left: 20px;
+
+}
+
+.mm {
+    margin-left: 35px;
+    margin-right: 350px;
+}
+
+.tdp {
+    height: 450px;
+    width: 550px;
+}
+#navtdp{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cajasnav{
+    color: black;
+    margin: 4em;
+}
+
+
+/* GRID INDEX */
+
+#header {
+    grid-area: header;
+    width: 100%;
+}
+
+#nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+}
+
+#section1 {
+    grid-area: section1;
+}
+
+#section2 {
+    grid-area: section2;
+}
+
+#section3 {
+    grid-area: section3;
+
+}
+
+#footer {
+    grid-area: footer;
+    width: 100%;
+}
+
+#card{
+    grid-area: card;
+}
+#bodyindex {
+    display: grid;
+    grid-template-rows: 20px 30px 2fr 500px 20px;
+    grid-template-columns: 34% 33% 33%;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "section1 section1 section1"
+        "section2 section2 card"
+        "footer footer footer";
+}
+
+.cajasnav {
+    margin: 4em
+}
+
+@media screen and (max-width:1022px){
+    #bodyindex {
+        grid-template-rows: 20px 30px auto auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "section1"
+            "section2"
+            "card"
+            "footer";
+}
+}
+
+
+@media screen and (max-width:320px) {
+    #bodyindex {
+        grid-template-rows: 20px 30px auto auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "section1"
+            "section2"
+            "card"
+            "footer";
+
+    }
+
+
+    header {
+        width: 100%;
+
+    }
+
+    .cajasnav {
+        margin: 0;
+    }
+
+    #nav {
+        display: flex;
+        width: 100%;
+    }
+
+    .texto {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    .bimage {
+        background-image: url("../imagenes/bimage.jpg");
+        background-position: 0;
+        background-repeat: no-repeat;
+        font-size: 20px;
+        width: 100%;
+        height: 467px;
+        word-break: keep-all;
+    }
+
+    #footer {
+        width: 100%;
+    }
+
+   
+}
+
+
+@media screen and (max-width:600px)
+
+/* and (min-width:320) */
+    {
+    #bodyindex {
+        grid-template-rows: 20px 30px auto auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "section1"
+            "section2"
+            "card"
+            "footer";
+    }
+
+    header {
+        width: 100%;
+
+    }
+
+    .cajasnav {
+        margin: 0;
+    }
+
+    #nav {
+        display: flex;
+        width: 100%;
+    }
+
+    .texto {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    .bimage {
+        background-image: url("../imagenes/bimage.jpg");
+        background-position: 0;
+        background-repeat: no-repeat;
+        font-size: 20px;
+        width: 100%;
+        height: 467px;
+        word-break: keep-all;
+    }
+
+    #footer {
+        width: 100%;
+    }
+
+    #section3 {
+        justify-content: center;
+        display: flex;
+    }
+}
+
+/* GRID TIPS */
+#headertips {
+    grid-area: headertips;
+}
+
+#navtips {
+    grid-area: navtips;
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+}
+
+#maintips {
+    grid-area: maintips;
+}
+
+#footertips {
+    grid-area: footertips;
+}
+
+#bodytips {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 20px 20px 2fr auto;
+    grid-template-areas:
+        "headertips headertips"
+        "navtips navtips"
+        "maintips maintips"
+        "footertips footertips"
+    ;
+}
+
+@media screen and (max-width: 320px) {
+    #bodytips {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 20px 30px 2fr auto;
+        grid-template-areas:
+            "headertips headertips"
+            "navtips navtips"
+            "maintips maintips"
+            "footertips footertips"
+    }
+
+    .cajasnav {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #bodytips {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 20px 30px 2fr auto;
+        grid-template-areas:
+            "headertips headertips"
+            "navtips navtips"
+            "maintips maintips"
+            "footertips footertips"
+    }
+
+    .cajasnav {
+        margin: 0;
+        
+    }
+}
+
+.hvr-glow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+  }
+  .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  }

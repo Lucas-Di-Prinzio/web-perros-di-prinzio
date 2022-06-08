@@ -1,0 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@import "./variables/vars.scss";
+@import "./compartido/compartido.scss";
+@import "./secciones/index.scss";
+@import "./secciones/tdp.scss";
+@import "./secciones/tips.scss";
