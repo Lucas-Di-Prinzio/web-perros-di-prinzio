@@ -6,6 +6,12 @@ nav {
     }
 }
 
+@mixin centrar {
+    display: grid;
+    place-items: center;
+}
+
+
 .cajasnav {
     color: black;
     margin: 4em;
@@ -18,12 +24,12 @@ nav {
 
 .titulo {
     font-family: $titulo;
-    font-weight: $pesog;
+    font-weight: map-get($weight, "pesog");
 }
 
 .texto {
     font-family: $texto;
-    font-weight: $pesoc;
+    font-weight: map-get($weight, "pesoc");
 }
 
 .fondod {
@@ -32,11 +38,12 @@ nav {
 }
 
 .texto-footer {
-    background: rgb(212, 163, 115);
-    background: linear-gradient(180deg, rgba(212, 163, 115, 1) 0%, rgba(218, 175, 130, 1) 25%, rgba(204, 213, 174, 1) 92%);
+    font-family: $texto;
+    font-weight: map-get($weight, "pesoc");
+    @extend .fondod;
     display: flex;
     flex-wrap: wrap;
-    font-family: "Roboto", sans-serif;
+    
 }
 
 .bgc {

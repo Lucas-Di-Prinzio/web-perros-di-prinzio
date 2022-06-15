@@ -27,17 +27,16 @@ nav ul li {
   font-weight: 600;
 }
 
-.fondod {
+.fondod, .texto-footer {
   background: rgb(212, 163, 115);
   background: linear-gradient(180deg, rgb(212, 163, 115) 0%, rgb(212, 163, 115) 22%, rgb(250, 237, 205) 100%);
 }
 
 .texto-footer {
-  background: rgb(212, 163, 115);
-  background: linear-gradient(180deg, rgb(212, 163, 115) 0%, rgb(218, 175, 130) 25%, rgb(204, 213, 174) 92%);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
   display: flex;
   flex-wrap: wrap;
-  font-family: "Roboto", sans-serif;
 }
 
 .bgc {
@@ -48,7 +47,7 @@ nav ul li {
   background-color: rgb(254, 250, 224);
 }
 
-.fondod {
+.fondod, .texto-footer {
   background: rgb(212, 163, 115);
   background: linear-gradient(180deg, rgb(212, 163, 115) 0%, rgb(212, 163, 115) 22%, rgb(250, 237, 205) 100%);
 }

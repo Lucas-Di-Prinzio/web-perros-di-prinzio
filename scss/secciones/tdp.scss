@@ -1,6 +1,6 @@
+
 .gridc{
-    display: grid;
-    place-items: center;
+    @include centrar;
     padding: 5px;
     margin: 5px;
 }
