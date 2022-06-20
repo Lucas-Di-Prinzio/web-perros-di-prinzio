@@ -72,8 +72,15 @@ nav ul li {
 
 /* GRID INDEX */
 .imagesize {
-  height: 33rem;
-  width: 39rem;
+  height: 34rem;
+  width: 41rem;
+  margin: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nospace {
+  font-size: 0;
 }
 
 .bimage {
@@ -90,6 +97,14 @@ nav ul li {
   position: relative;
   padding-top: 50px;
   color: white;
+}
+
+.cardpad {
+  margin: 25px;
+}
+
+.nodeco {
+  text-decoration: none;
 }
 
 #header {

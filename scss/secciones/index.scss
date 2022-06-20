@@ -1,7 +1,13 @@
 /* GRID INDEX */
 .imagesize {
-    height: 33rem;
-    width: 39rem;
+    height: 34rem;
+    width: 41rem;
+    margin: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.nospace{
+    font-size: 0;
 }
 .bimage {
     background-image: url("../imagenes/bimage.jpg");
@@ -15,7 +21,15 @@
     text-align: center;
     position: relative;
     padding-top: 50px;
-    color: white;}
+    color: white;
+}
+.cardpad{
+    margin: 25px;
+    
+}
+.nodeco{
+    text-decoration: none;
+}
 
 
 #header {
