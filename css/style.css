@@ -110,6 +110,7 @@ nav ul li {
 #header {
   grid-area: header;
   width: 100%;
+  height: 35px;
 }
 
 #nav {
@@ -147,7 +148,7 @@ nav ul li {
 
 #bodyindex {
   display: grid;
-  grid-template-rows: 20px 30px 2fr 500px 20px;
+  grid-template-rows: 35px 30px 2fr 500px 20px;
   grid-template-columns: 34% 33% 33%;
   grid-template-areas: "header header header" "nav nav nav" "section1 section1 section1" "section2 section2 card" "footer footer footer";
 }
@@ -158,19 +159,20 @@ nav ul li {
 
 @media screen and (max-width: 1022px) {
   #bodyindex {
-    grid-template-rows: 20px 30px auto auto auto auto;
+    grid-template-rows: 35px 30px auto auto auto auto;
     grid-template-columns: auto;
     grid-template-areas: "header" "nav" "section1" "section2" "card" "footer";
   }
 }
 @media screen and (max-width: 320px) {
   #bodyindex {
-    grid-template-rows: 20px 30px auto auto auto auto;
+    grid-template-rows: 35px 30px auto auto auto auto;
     grid-template-columns: auto;
     grid-template-areas: "header" "nav" "section1" "section2" "card" "footer";
   }
   header {
     width: 100%;
+    height: 35px;
   }
   .cajasnav {
     margin: 0;
@@ -198,12 +200,13 @@ nav ul li {
 }
 @media screen and (max-width: 600px) {
   #bodyindex {
-    grid-template-rows: 20px 30px auto auto auto auto;
+    grid-template-rows: 35px 30px auto auto auto auto;
     grid-template-columns: auto;
     grid-template-areas: "header" "nav" "section1" "section2" "card" "footer";
   }
   header {
     width: 100%;
+    height: 35px;
   }
   .cajasnav {
     margin: 0;
@@ -257,6 +260,7 @@ nav ul li {
 
 #headertips {
   grid-area: headertips;
+  height: 35px;
 }
 
 #navtips {
@@ -277,7 +281,7 @@ nav ul li {
 #bodytips {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 20px 20px 2fr auto;
+  grid-template-rows: 35px 20px 2fr auto;
   grid-template-areas: "headertips headertips" "navtips navtips" "maintips maintips" "footertips footertips";
 }
 
@@ -285,7 +289,7 @@ nav ul li {
   #bodytips {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 20px 30px 2fr auto;
+    grid-template-rows: 35px 30px 2fr auto;
     grid-template-areas: "headertips headertips" "navtips navtips" "maintips maintips" "footertips footertips";
   }
   .cajasnav {
@@ -296,12 +300,34 @@ nav ul li {
   #bodytips {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 20px 30px 2fr auto;
+    grid-template-rows: 35px 30px 2fr auto;
     grid-template-areas: "headertips headertips" "navtips navtips" "maintips maintips" "footertips footertips";
   }
   .cajasnav {
     margin: 0;
   }
 }
-
+.cardborder{
+  padding-left: 0;
+  padding-right: 0;
+  border: none !important;
+  background-color: rgb(250, 237, 205);
+}
+.cardcolor{
+  background-color: rgb(250, 237, 205);
+  padding-left: 0;
+  padding-right: 0;
+}
+.colorboton{
+  background: rgb(204, 213, 174)!important;
+  border-color: rgb(204, 213, 174)!important;
+  color: black;
+}
+.headericon{
+  height:35px;
+  width:47px;
+}
+.line1{
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */

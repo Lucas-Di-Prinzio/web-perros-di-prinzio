@@ -35,6 +35,7 @@
 #header {
     grid-area: header;
     width: 100%;
+    height: 35px;
 }
 
 #nav {
@@ -70,7 +71,7 @@
 }
 #bodyindex {
     display: grid;
-    grid-template-rows: 20px 30px 2fr 500px 20px;
+    grid-template-rows: 35px 30px 2fr 500px 20px;
     grid-template-columns: 34% 33% 33%;
     grid-template-areas:
         "header header header"
@@ -86,7 +87,7 @@
 
 @media screen and (max-width:1022px){
     #bodyindex {
-        grid-template-rows: 20px 30px auto auto auto auto;
+        grid-template-rows: 35px 30px auto auto auto auto;
         grid-template-columns: auto;
         grid-template-areas:
             "header"
@@ -101,7 +102,7 @@
 
 @media screen and (max-width:320px) {
     #bodyindex {
-        grid-template-rows: 20px 30px auto auto auto auto;
+        grid-template-rows: 35px 30px auto auto auto auto;
         grid-template-columns: auto;
         grid-template-areas:
             "header"
@@ -116,6 +117,7 @@
 
     header {
         width: 100%;
+        height: 35px
 
     }
 
@@ -156,7 +158,7 @@
 /* and (min-width:320) */
     {
     #bodyindex {
-        grid-template-rows: 20px 30px auto auto auto auto;
+        grid-template-rows: 35px 30px auto auto auto auto;
         grid-template-columns: auto;
         grid-template-areas:
             "header"
@@ -169,6 +171,7 @@
 
     header {
         width: 100%;
+        height: 35px
 
     }
 

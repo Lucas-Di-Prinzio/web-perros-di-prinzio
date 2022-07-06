@@ -4,22 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <title>Cuidado</title>
     <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <meta name="description" content="Sitio web sobre diferentes razas de perros y cosas utiles relacionadas a adoptar un perro">
     <meta name="keywords" content="PERROS, ADOPCIÓN, DOGS, PUPPY, CACHORRO, VETERINARIO, CACHORRITOS">
 </head>
-<body>
-    <header><a href="../index.html"> Perritos</a></header>
-    <nav>
+<body class="fondo">
+  <header id="header"class="line1">
+    <a style="color: black; text-decoration: none;" href="..//index.html">
+        <img class="headericon line1" src="../imagenes/favicon.png" alt="icono perrito"> <p class="titulo line1">HOME</p>
+      </a>  
+      </header> 
+  
+ <!-- <header><a class="titulo" style="color: black; text-decoration: none;" href="../index.html"> Perritos</a></header> -->
+
+    <nav id="nav" class="titulo fondod ">
         <ul>
-            <a href="./juguetes.html"><li>Juguetes</li></a>
-            <a href="./productos-de-cuidado.html"><li>Productos de cuidado</li></a>
-            <a href="./tips.html"><li>Tips</li></a>
+            <a class="nolink hvr-glow" href="./juguetes.html">
+                <li class="cajasnav">Juguetes</li>
+            </a>
+            <a class="nolink hvr-glow" href="./productos-de-cuidado.html">
+                <li class="cajasnav">Productos de cuidado</li>
+            </a>
+            <a class="nolink hvr-glow" href="./tips.html">
+                <li class="cajasnav">Tips</li>
+            </a>
         </ul>
     </nav>
-    <footer>
+   
+   
+   
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col card text-center cardcolor">
+          <div class="card bg-image hover-overlay ripple cardborder" data-mdb-ripple-color="light">
+            <img src="../imagenes/collar.jpg" class="card-img-top" alt="collar identificador"/>
+            <div class="card-body">
+              <h5 class="card-title titulo">Collar</h5>
+              <p class="card-text texto">
+                Collar con inscripciones personalizables.
+              </p>
+              <a href="https://www.amazon.com/-/es/personalizado-medianos-peque%C3%B1os-tel%C3%A9fono-disponible/dp/B09N1Q282Q/ref=sr_1_6?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1VQ9ISPNXVZ2R&keywords=dog+collar&qid=1657143155&sprefix=dog+coll%2Caps%2C205&sr=8-6" target="_blank"><button type="button"  class="btn btn-primary colorboton texto"> Comprar </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col card text-center cardcolor">
+          <div class="card bg-image hover-overlay ripple cardborder" data-mdb-ripple-color="light">
+            <img src="../imagenes/hablar.jpg" class="card-img-top" alt="botones con sonido"/>
+            <div class="card-body">
+              <h5 class="card-title titulo">Botones</h5>
+              <p class="card-text texto">
+                Botones programables para poder entrenar y comunicarte con tu mascota.
+              </p>
+              <a href="https://www.amazon.com/-/es/Hunger-Words-Talking-Pet-entrenamiento/dp/B092DYHW2K/ref=sr_1_3?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3VG97RKCKA77I&keywords=dog+buttons&qid=1657143228&sprefix=dog+butt%2Caps%2C208&sr=8-3" target="_blank">
+              <button type="button" class="btn btn-primary colorboton texto">Comprar</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col card text-center cardcolor">
+          <div class="card bg-image hover-overlay ripple cardborder" data-mdb-ripple-color="light">
+            <img src="../imagenes/corral1.jpg" class="card-img-top" alt="corral de contencion"/>
+            <div class="card-body">
+              <h5 class="card-title titulo">Corral</h5>
+              <p class="card-text texto">Corral para proteger a tu mascota de ir hacia lugares indebidos.</p>
+              <a href="https://www.amazon.com/-/es/IRIS-USA-Corralito-mascotas-paneles/dp/B07S3KZ2NL/ref=sr_1_5?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1TEW22FK99UKG&keywords=exercise+dog&qid=1657143074&sprefix=excersice+do%2Caps%2C258&sr=8-5" target="_blank">
+              <button type="button" class="btn btn-primary colorboton texto">Comprar</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col card text-center cardcolor">
+          <div class="card bg-image hover-overlay ripple cardborder" data-mdb-ripple-color="light">
+            <img src="../imagenes//cinta.jpg" class="card-img-top" alt="cinta para correr"/>
+            <div class="card-body">
+              <h5 class="card-title titulo">Cinta de correr</h5>
+              <p class="card-text texto">
+                Cinta para que tu mascota pueda correr en casa.
+              </p>
+              <a href="https://www.amazon.com/-/es/dogPACER-91641-LF-3-1-completo/dp/B007Z59K6I/ref=sr_1_19?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=H0MJT5XNJROM&keywords=dog+running&qid=1657143178&sprefix=dog+runni%2Caps%2C205&sr=8-19" target="_blank">
+              <button type="button" class="btn btn-primary colorboton texto">Comprar</button></a>
+            </div>
+          </div>  
+        </div>
+      </div>
+    
+    
+
+
+
+
+
+
+
+
+    <footer id="footer" class="texto-footer">
         <p>©Lucas Di Prinzio. Todos los derechos reservados. Prohibida la reproducción por cualquier medio.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
